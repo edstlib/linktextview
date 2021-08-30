@@ -43,13 +43,13 @@ class LinkTextView: AppCompatTextView {
             link = a.getString(R.styleable.LinkTextView_linkText)
             linkColor = a.getColor(R.styleable.LinkTextView_linkColor, 0)
 
-            draw()
+            relayout()
 
             a.recycle()
         }
     }
 
-    private fun draw() {
+    fun relayout() {
         if (link != null) {
             val text = HtmlCompat.fromHtml(text.toString(),0)
 
