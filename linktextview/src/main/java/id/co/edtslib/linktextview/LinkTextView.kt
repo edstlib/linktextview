@@ -14,7 +14,7 @@ import androidx.core.text.HtmlCompat
 
 class LinkTextView: AppCompatTextView {
     private var isLink = false
-    private var link: String? = null
+    var link: String? = null
     private var linkColor = 0
 
     constructor(context: Context) : super(context) {
